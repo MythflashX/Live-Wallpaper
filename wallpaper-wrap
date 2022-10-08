@@ -1,0 +1,6 @@
+#!/bin/sh
+killall -9 xwinwrap
+
+wp=$(cat /home/mytx/wallpaper-save)
+
+xwinwrap -g 1360x768+0+0 -un -fdt -ni -b -nf -ov -- /home/mytx/wallpaper-live WID $wp &
